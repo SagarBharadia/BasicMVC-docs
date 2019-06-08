@@ -1,4 +1,5 @@
-Free Bootstrap 4 theme for project documentation
+#Github repository for the BasicMVC Documentation
+This is the github repository for the BasicMVC documentation. Based off of the free documentation theme by Xiaoying Riley. Detail of the designer are below.
 
 Theme name:
 =======================================================================
