@@ -34,7 +34,7 @@
             <div class="container">
                 <div id="doc-header" class="doc-header text-center">
                     <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Documentation</h1>
-                    <div class="meta"><i class="far fa-clock"></i> Last updated: June 8th, 2019</div>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: June 12th, 2019</div>
                 </div><!--//doc-header-->
                 <div class="doc-body row">
                     <div class="doc-content col-md-9 col-12 order-1">
@@ -243,11 +243,20 @@ return new BasicMVCSiteIndex();
                                 </div>
                                 <div id="logging" class="section-block">
                                     <h3 class="block-title">Logging</h3>
-                                </div>
-                                <div id="global-functions" class="section-block">
-                                    <h3 class="block-title">Global Functions</h3>
+                                    <p>Logging with BasicMVC is extremely easy. Using PHP's <code>error_log($e, 0)</code> function it will output in log within BasicMVC's log directory for PHP errors, as explained above in the <a href="#directory-structure">directory structure</a>.</p>
+                                    <p><code>$e</code> is the message which should be outputted to the file. As this is a PHP function, 0 should be used so it outputs to the file and doesn't email or send another action off. To learn more about this function visit the <a href="https://www.php.net/manual/en/function.error-log.php">php documentation for it.</a></p>
+                                    <p>For none php related logging, BasicMVC provides a <code>debug($message, $type, $showTrace)</code> function which outputs within the debug directory.</p>
+                                    <p><code>$message</code> as you may have guessed, is the message that should be appended to the debug file.</p>
+                                    <p><code>$type</code> is what type the debug should be displayed as. <code>2</code> for INFO, <code>3</code> for DEBUG, <code>4</code> for LOG. Although these seem very similar to each other, they are there to allow you to use them you see fit to help differentiate different log types you may have. By default it is set to 2.</p>
+                                    <p><code>$showTrace</code> is a boolean, again as the name suggests, it's whether or not a execution trace should be included which the debug. By default it is set to false.</p>
                                 </div>
                             </section><!--//doc-section-->
+                            <section class="doc-section">
+                                <div class="section-block">
+                                    <h3 class="block-title">That's all for now!</h3>
+                                    <p>Head over to the <a href="/todo-list">todo list application tutorial</a> to see the current framework in action and learn the basic usage of it.</p>
+                                </div>
+                            </section>
                             
                         </div><!--//content-inner-->
                     </div><!--//doc-content-->
@@ -268,7 +277,6 @@ return new BasicMVCSiteIndex();
                                     <a class="nav-link scrollto" href="#models">Models</a>
                                     <a class="nav-link scrollto" href="#database">Database</a>
                                     <a class="nav-link scrollto" href="#logging">Logging</a>
-                                    <a class="nav-link scrollto" href="#global-functions">Global Functions</a>
                                 </nav><!--//nav-->
                             </nav><!--//doc-menu-->
 	                        
